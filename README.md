@@ -1,4 +1,4 @@
 # SoftUni-->Fundamentals.py
-All exercises that i've done trought fundamentals.
+All exercises that I've done through fundamentals.
 
-![SoftUni Logo](images/logo_softuni.png)
+![SoftUni Logo](images/Software%20University.png)
