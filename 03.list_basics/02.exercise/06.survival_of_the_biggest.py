@@ -1,13 +1,22 @@
 numbers = input().split()
-remeved_numbers = int(input())
+removed_numbers = int(input())
 
 int_numbers = []
 for number in numbers:
     int_numbers.append(int(number))
 
-int_numbers.sort(reverse=True)
-after_removal = (int_numbers[:(len(int_numbers) - remeved_numbers)])
+lst_copy = int_numbers.copy()
+lst_copy.sort(reverse=True)
 
+for _ in range(removed_numbers):
 
+    lst_copy.pop()
 
-print(', '.join(map(str, after_removal)))
+filtered_lst = []
+
+for element in int_numbers:
+
+    if element in lst_copy:
+        filtered_lst.append(element)
+
+print(', '.join(map(str, filtered_lst)))
