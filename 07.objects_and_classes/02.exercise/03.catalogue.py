@@ -3,10 +3,8 @@ class Catalogue:
         self.name = name
         self.products = []
 
-
     def add_product(self, product_name: str):
         self.products.append(product_name)
-
 
     def get_by_letter(self, first_letter: str):
         for current_product in self.products:
@@ -15,8 +13,7 @@ class Catalogue:
 
         return self.products
 
-
     def __repr__(self):
         self.products.sort()
-        self.formated = '\n'.join(self.products)
-        return f"Items in the {self.name} catalogue:\n{self.formated}"
+        formated = '\n'.join(self.products)
+        return f"Items in the {self.name} catalogue:\n{formated}"
