@@ -1,12 +1,9 @@
-line_number = 0
-
 mineral = input()
 
 ores = {}
 
 while mineral != 'stop':
-    line_number += 1
-
+    
     quantity = int(input())
 
     if mineral not in ores:
